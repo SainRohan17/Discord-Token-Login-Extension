@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discord Token Login</title>
+    <style>
+        /* Set popup dimensions */
+        html, body {
+            width: 320px;
+            height: 200px;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #2C2F33;
+            overflow: hidden;
+        }
+
+        #container {
+            width: 100%;
+            padding: 20px;
+            background: #2C2F33;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .inner-container {
+            padding: 20px;
+            background: #2C2F33;
+            border-radius: 10px;
+            z-index: 1;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 14px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: #40444B;
+            color: #FFFFFF;
+            font-size: 14px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #FFFFFF;
+            background: linear-gradient(145deg, #7cc3f9, #ab7df3);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease; /* Smooth scaling for hover and click */
+        }
+
+        button:hover {
+            transform: scale(1.02); /* 2% larger when hovered */
+        }
+
+        button:active {
+            transform: scale(0.98); /* 2% smaller when clicked */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="inner-container">
+            <h2>Discord Token</h2>
+            <input type="text" id="token" placeholder="Enter your token">
+            <button id="login">Login</button>
+        </div>
+    </div>
+
+    <!-- Link to the existing popup.js -->
+    <script src="popup.js"></script>
+</body>
+</html>
